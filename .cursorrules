@@ -1,0 +1,97 @@
+# .cursorrules for the Beauty Salon Responsive Website
+
+## Goal
+This project is about creating a modern, responsive website for a beauty salon. It will include a calendar for booking appointments, automation with AI agents, and a seamless user experience across devices.
+
+## Tech Stack
+- **Frontend:** React.js (for building the user interface)
+- **Backend:** FastAPI (for handling server-side logic and APIs)
+- **Database:** Supabase (for data management and storage)
+- **Hosting:** Cloudflare (for serving the website)
+- **Automation and AI:**
+  - OpenAI API (for intelligent features)
+  - n8n.io Community Edition API (for automation workflows)
+- **Admin Panel:** AppSmith API (for creating an intuitive admin panel)
+- **Version Control:** GitHub (for code collaboration and versioning)
+
+## Learning Approach
+- **Junior-Friendly:** Explain key concepts step-by-step with examples.
+- **Repetition for Retention:** Repeat the critical parts of each stage in simple terms.
+- **Hands-On Tasks:** Provide small, actionable tasks after each major learning topic.
+
+## Rules
+### 1. **Frontend Development with React.js**
+1. Explain the basics of React (components, props, state).
+2. Show how to create reusable components for the website (e.g., Navbar, Footer, AppointmentCard).
+3. Repeat: "Components are like building blocks of the website. Each block does one specific thing."
+4. Task: Create a simple "Hello, Beauty Salon!" React component.
+
+### 2. **Backend Development with FastAPI**
+1. Introduce REST APIs and explain how FastAPI handles requests and responses.
+2. Demonstrate creating an endpoint to fetch available appointments.
+3. Repeat: "FastAPI lets the frontend and backend talk to each other. It handles data requests."
+4. Task: Write a FastAPI route that returns a welcome message.
+
+### 3. **Database with Supabase**
+1. Explain what a relational database is and how Supabase uses PostgreSQL.
+2. Show how to create a table for storing appointments (columns: customer name, date, time, service).
+3. Repeat: "Supabase is where we store the data, like who booked what and when."
+4. Task: Create a Supabase project and set up a sample table.
+
+### 4. **Automation with OpenAI API and n8n.io**
+1. Explain how OpenAI APIs can help automate responses (e.g., recommending appointment slots).
+2. Show how to connect the backend to the OpenAI API.
+3. Introduce n8n.io and demonstrate creating a workflow for handling tasks (e.g., automated reminders for appointments).
+4. Repeat: "OpenAI helps make the website smarter by understanding and responding. n8n.io simplifies workflows."
+5. Task: Use OpenAI API to generate a sample message and create a basic workflow in n8n.io.
+
+### 5. **Containerization with Docker**
+1. Introduce Docker and explain its benefits ("same environment everywhere").
+2. Show how to write a Dockerfile for the backend.
+3. Repeat: "Docker makes sure it works the same on any computer."
+4. Task: Create a Dockerfile for running the FastAPI server.
+
+### 6. **Version Control with GitHub**
+1. Explain how GitHub helps manage and collaborate on code.
+2. Demonstrate basic Git commands (init, add, commit, push).
+3. Repeat: "GitHub is like saving your progress and sharing it with your team."
+4. Task: Create a new GitHub repository and push the initial code.
+
+### 7. **Hosting with Cloudflare**
+1. Explain why hosting is needed and how Cloudflare works.
+2. Show how to deploy the frontend and backend.
+3. Repeat: "Cloudflare makes our website available to everyone, everywhere."
+4. Task: Deploy a simple "Under Construction" page.
+
+### 8. **File Structure**
+1. Explain the importance of organizing files in a project.
+2. Recommended structure:
+   - **/frontend**: Contains the React.js code.
+     - **/src**: Source files for components, pages, and styles.
+     - **/public**: Static assets like images.
+   - **/backend**: Contains the FastAPI server code.
+     - **/app**: Application code, including routes and utilities.
+     - **/tests**: Test cases for the backend.
+   - **/docker**: Dockerfiles and related configuration.
+   - **/.github**: GitHub Actions workflows.
+3. Include comments in the codebase to explain the purpose of files and folders. Do not delete comments unless they are outdated or unnecessary.
+4. Repeat: "A clear structure makes it easier to find and manage code."
+5. Task: Create the initial project folders and subfolders and add comments where appropriate.
+
+### 9. **.env Variables**
+1. Explain what environment variables are and why they are important (e.g., hiding sensitive data like API keys).
+2. Show how to create a `.env` file and add variables such as:
+   - `REACT_APP_API_URL` (for the frontend to connect to the backend).
+   - `FASTAPI_SECRET_KEY` (for backend security).
+   - `SUPABASE_URL` and `SUPABASE_KEY` (for database connection).
+   - `OPENAI_API_KEY` (for automation features).
+   - `N8N_API_URL` and `N8N_API_KEY` (for workflow automation).
+   - `APPSMITH_API_URL` and `APPSMITH_API_KEY` (for the admin panel).
+3. Repeat: "Keep secrets out of the code by using environment variables."
+4. Task: Set up a `.env` file for both the frontend and backend and include comments to describe each variable's purpose.
+
+## Additional Notes
+- Break each topic into small, digestible parts.
+- Emphasize practical application over theory.
+- Encourage asking questions and exploring solutions independently.
+- Use examples and analogies to simplify complex ideas.
